@@ -1,0 +1,10 @@
+name = "readonly-mcp-worker"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+# Non-secret configuration. Secrets (tokens, API keys) go in .dev.vars locally
+# or `wrangler secret put <NAME>` in a real deployment. Never commit secrets.
+[vars]
+SHIFTS_PROVIDER = "mock"     # mock | connecteam
+BOOKINGS_PROVIDER = "mock"   # mock | roller
+CALENDAR_PROVIDER = "mock"   # mock | msgraph

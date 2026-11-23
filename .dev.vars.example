@@ -1,0 +1,20 @@
+# Copy to .dev.vars for local development (`wrangler dev` reads it).
+# .dev.vars is gitignored. Do not commit real values.
+
+# Optional. If set, every /mcp request must send `Authorization: Bearer <token>`.
+# If unset, the server is open (fine for local mock data, not for real data).
+MCP_AUTH_TOKEN=change-me
+
+# Provider selection (defaults to mock). Overrides the [vars] in wrangler.toml.
+# SHIFTS_PROVIDER=connecteam
+# BOOKINGS_PROVIDER=roller
+# CALENDAR_PROVIDER=msgraph
+
+# Real provider settings (skeletons only, not wired yet; see README).
+# CONNECTEAM_BASE_URL=https://api.example.com
+# CONNECTEAM_API_KEY=
+# ROLLER_BASE_URL=https://api.example.com
+# ROLLER_API_TOKEN=
+# MSGRAPH_BASE_URL=https://graph.microsoft.com/v1.0
+# MSGRAPH_ACCESS_TOKEN=
+# MSGRAPH_CALENDAR_USER=user@example.com
